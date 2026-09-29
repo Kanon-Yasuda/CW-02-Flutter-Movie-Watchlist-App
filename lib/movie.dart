@@ -3,7 +3,6 @@ class Movie {
   final String posterPath;
   final List<String> cast;
   final String synopsis;
-  bool isWatchlisted;      // grad feature
 
   Movie({
     required this.title,
