@@ -9,6 +9,5 @@ class Movie {
     required this.posterPath,
     required this.cast,
     required this.synopsis,
-    this.isWatchlisted = false,
   });
 }
