@@ -13,15 +13,17 @@ appBar: AppBar(
 title: const Text('Movie Watchlist'),
 ),
 body: ListView.builder(
-itemCount: sampleMovies.length,
-itemBuilder: (context, index) {
-final movie = sampleMovies[index];
+  padding: const EdgeInsets.all(16),
+  itemCount: sampleMovies.length,
+  itemBuilder: (context, index) {
+  final movie = sampleMovies[index];
 
       return Card(
         child: ListTile(
           leading: Image.asset(
             movie.posterPath,
-            width: 56,
+            width: 100,
+            height: 140,
             fit: BoxFit.cover,
           ),
           title: Text(movie.title),
